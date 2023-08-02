@@ -4,7 +4,7 @@ output:
     keep_tex: true
     fig_caption: yes
     latex_engine: xelatex
-    template: "~/.Pandoc/templates/cam-latex-syllabus.tex"
+    template: "cam-latex-syllabus.tex"
 geometry: margin=1in
 
 title: "POSC 2103--007: Introduction to United States Government"
@@ -40,9 +40,7 @@ advdate <- function(obj, adv) {
 }
 
 library(RefManageR)
-# library(knitcitations)
-# library(rcrossref)
-bib <- ReadBib("~/Library/texmf/bibtex/bib/Master.bib") 
+bib <- ReadBib("amgov.bib") 
 myopts <- BibOptions(bib.style = "authoryear", style="latex", first.inits=FALSE, max.names = 20)
 ```
 
@@ -84,7 +82,7 @@ This textbook is required. You can search for it online, in the bookstore, and v
 
 \hangindent=0.7cm
 ```{r, echo = FALSE, results="asis"} 
-bib["Gitelson:2017"]
+bib["Krutz:2021"]
 ``` 
 
 ## Technology
