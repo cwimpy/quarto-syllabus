@@ -7,16 +7,16 @@ output:
     template: "cam-latex-syllabus.tex"
 geometry: margin=1in
 
-title: "POSC 2103--007: Introduction to United States Government"
+title: "POSC 2103--10A: Introduction to United States Government"
 author: Dr. Cameron Wimpy
-date: "Spring 2020"
+date: "Fall 2023"
 
 email: "cwimpy@astate.edu"
 web: "cwimpy.com"
-officehours: "MW: 10:00--11:30 a.m. | R: 9:30--11:30 a.m."
-office: "HSS: 3022"
-classroom: "HSS: 3005"
-classhours: "MW 12:30--1:45 p.m."
+officehours: "By Zoom as needed"
+office: "HSS: 3007C"
+classroom: "Online"
+classhours: "Online"
 
 fontsize: 11pt
 header-includes:
@@ -27,7 +27,7 @@ header-includes:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache=FALSE, dev='pdf')
-mon <- as.Date("2020-01-13")
+mon <- as.Date("2023-08-21")
 
 advdate <- function(obj, adv) {
  tmon <- obj + 7*(adv-1)
@@ -87,15 +87,11 @@ bib["Krutz:2021"]
 
 ## Technology
 
-You will need to use your A-State email and have access to Blackboard. If there is any issue with these items you should me know by the second day of class. 
+You will need to use your A-State email and have access to Canvas If there is any issue with these items you should me know by the second day of class. 
 
 ## Exams
 
-There will be three multiple choice exams. The exams will take place via Blackboard (make sure you can access Blackboard by the second day of class). Each exam will consist of 50 questions taken from the lectures and readings. The final exam is \underline{not} comprehensive.
-
-## Current Events
-
-Given the topic of this course we will begin each class with a brief (and sometimes not so brief) discussion of current events as they relate to government in the United States. Please be prepared to participate in this discussion by reading the news at your favorite source. If you do not have a favorite source, then I suggest looking at a range of outlets. I often read: _The New York Times_, _The Washington Post_, _The Economist_, _Fox News_, _CNN_, _BBC News_, _Real Clear Politics_, _Five Thirty Eight_, and _Politico_ among others. Please bring in any articles or topics you would like to discuss. There are also some great podcasts/radio options including: _NPR_, _FiveThirtyEight_, and _The Daily_ (NYT). Please refrain from looking up current events in real time during class. This is disruptive, rude, and signals a lack of preparation at best. Come prepared with topics and details---please do not just blurt out headlines.
+There will be two multiple-choice exams. The exams will take place via Canvas (make sure you can access Canvas by the second day of class). Each exam will consist of 50 questions taken from the lectures and readings. The final exam is \underline{not} comprehensive.
 
 # Course Policies
 
@@ -121,7 +117,8 @@ dt2 <- read_csv("scale.csv")
 
 ```{r grade_weights, echo=FALSE}
 kable(dt, "latex", booktabs = T) %>% 
-  kable_styling(latex_options = "striped")
+  kable_styling(latex_options = "striped") %>% 
+  kable_styling(latex_options = "HOLD_position")
 ```
 
 The grading system will follow the [A-State convention](https://www.astate.edu/college/graduate-school/academic-policies/). Letter grades will be assigned as follows:
@@ -129,21 +126,11 @@ The grading system will follow the [A-State convention](https://www.astate.edu/c
 
 ```{r grade_scale, echo=FALSE}
 kable(dt2, "latex", booktabs = T) %>% 
-  kable_styling(latex_options = "striped")
+  kable_styling(latex_options = "striped") %>% 
+  kable_styling(latex_options = "HOLD_position")
 ```
 
-## E-mail Policy
 
-I am usually quick to respond to student e-mails during regular business hours. However, student e-mails tend to do several things that try my patience. The following points outline why I will not respond to certain e-mails students send. _Note that some of these may not apply specifically to this course._
-
-1. The student could answer the inquiry by reading the syllabus.
-2. The student provides am unsolicited reason for missing class (other than exam days). I do not need to know the exact reason why you missed class. Students with excusable absences are responsible for giving me a note that documents the reason for a missed exam. Anything else is just extra information.
-3. The student wants to know what topics were missed during a missed/skipped class. The answer is always "you missed what was on the syllabus."
-4. The student is not professional in the e-mail. Please consider writing professional e-mails, it's a good habit that will pay off one day. That means you begin the e-mail with a greeting and that you end it with a closing. You can learn more from sites like this: [https://www.indeed.com/career-advice/career-development/how-to-write-a-professional-email](https://www.indeed.com/career-advice/career-development/how-to-write-a-professional-email)
-5. The student wants to know something that is readily discernible from Blackboard (e.g., "how many discussion posts do I have left?," "what is my current grade?").
-6. The student is requesting an extension on an assignment for which the syllabus already established the deadline. The answer is always "no."
-7. The student is ["grade grubbing"](https://www.math.uh.edu/~tomforde/GradeGrubbing.html) or asking to round up a grade outside of the rounding outlined in the grading policy above. The answer is always "no."
-8. The student is asking for an extra credit opportunity, a request that amounts to more grading for the professor. The answer is "no."
 
 ## Make-Up Exam Policy
 
@@ -155,7 +142,6 @@ I do not give extra credit and grades will only be changed in the event of a cal
 
 ## Attendance
 
-Attendance is required and I will take roll each class. See the [student handbook](http://www.astate.edu/a/student-conduct/student-standards/handbook-home.dot) for the University policies on attendance. 
 
 ## Laptops, Phones, & Tablets
 
@@ -163,13 +149,11 @@ Laptops and tablets are allowed in the classroom insofar as they are used to tak
 
 ## Academic Dishonesty Policy
 
-Plagiarism (the act of taking and/or using the ideas, work, and/or writings of another person as one’s own) is a serious offense against academic integrity which could result in failure for the paper or assignment, failure for the course, and/or expulsion from Arkansas State University.
 
-Cheating is an act of dishonesty with the intention of obtaining and/or using information in a fraudulent manner. For further information, including specifics about what constitutes plagiarism or cheating, see ASU’s Academic Integrity Policy in the student [handbook](https://www.astate.edu/a/student-conduct/student-standards/handbook-home.dot).
 
-## Disabilities Policy
+## Access and Accomodations Policy
 
-Any student in this course who has a disability that may prevent him/her from fully participating in this course should contact Disability Services at (870) 972-3964 (or here: [https://www.astate.edu/disability](https://www.astate.edu/disability)) as soon as possible so we can make the necessary accommodations to facilitate your educational opportunity.
+
 
 ## Copyright & Fair Use Statement
 
@@ -207,100 +191,4 @@ Important: class readings are subject to change, contingent on mitigating circum
 
 - Chapter 4
 
-##  `r advdate(mon, 5)`: Civil Rights
 
-### Read:
-
-- Chapter 5
-
-##  `r advdate(mon, 6)`: Exam 1 
-
-### Read:
-
-- Chapters 1--5 (as needed to review)
-
-### Activities:
-
-- Exam 1 Review (M) | Please be prepared with questions!
-
-- Exam 1 (W) | Covers Chapters 1--5
-
-##  `r advdate(mon, 7)`: Public Opinion and Political Participation | Political Parties
-
-### Read:
-
-- Chapters 6--7
-
-##  `r advdate(mon, 8)`: Campaigns and Elections
-
-### Read:
-
-- Chapter 8
-
-##  `r advdate(mon, 9)`:  Interest Groups
-
-### Read:
-
-- Chapter 9
-
-##  `r advdate(mon, 10)`: Media & Politics
-
-### Read:
-
-- Chapter 10
-
-##  `r advdate(mon, 11)`: Spring Break | No Class!
-
-##  `r advdate(mon, 12)`: Exam 2
-
-### Read:
-
-- Chapters 6--10 (as needed to review)
-
-### Activities:
-
-- Exam 2 Review (M) | Please be prepared with questions!
-
-- Exam 2 (W) | Covers Chapters 6--10
-
-##  `r advdate(mon, 13)`: Congress
-
-### Read:
-
-- Chapters 11
-
-##  `r advdate(mon, 14)`: The Presidency
-
-### Read:
-
-- Chapter 12
-
-
-
-##  `r advdate(mon, 15)`: Bureaucracy
-
-### Read:
-
-- Chapter 13
-
-##  `r advdate(mon, 16)`: Courts, Judges, & The Law 
-
-### Read:
-
-- Chapter 14
-
-### Activities:
-
-- Exam 3 Review (W) | Please be prepared with questions!
-
-##  `r advdate(mon, 17)`: Exam 3
-
-### Read:
-
-- Chapters 11--14 (as needed to review)
-
-- Exam 3 (M) | Covers Chapters 11--14
-
-### Activities:
-
-- **The Final Exam is Monday, May \nth{4} @12:30 p.m.**
