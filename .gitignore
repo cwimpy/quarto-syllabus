@@ -51,3 +51,6 @@ rsconnect/
 .log
 rmarkdown/posc_2103.log
 rmarkdown/posc_2103.log
+rmarkdown/missfont.log
+rmarkdown/.DS_Store
+rmarkdown/posc_2103.tex
